@@ -1,0 +1,22 @@
+---
+
+environment:
+  software:
+    php:
+      version: 7.0.18
+    magento:
+      upgrade: false
+      clean_cache: false
+      set_mode: false
+  cron:
+    - name: "test"
+      minute: "0"
+      hour: "5,2"
+      job: "echo 'job-content' > /dev/null"
+hooks:
+  build: |
+    echo "Creating a build"
+  before-deploy: |
+    echo "Right before deploy"
+  after-deploy: |
+    echo "Right after deploy"
