@@ -3,11 +3,10 @@
 environment:
   software:
     php:
-      version: 7.0.18
+      version: 7.0
     magento:
-      upgrade: false
-      clean_cache: false
-      set_mode: false
+      upgrade: true
+      use_sample_data: true
   cron:
     - name: "test"
       minute: "0"
