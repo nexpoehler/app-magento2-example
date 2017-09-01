@@ -3,7 +3,7 @@
 environment:
   software:
     php:
-      version: 7.0
+      version: "7.0"
     magento:
       upgrade: true
       use_sample_data: true
