@@ -7,7 +7,7 @@ environment:
     magento:
       upgrade: true
       use_sample_data: true
-      base_url_override: "public_ip"
+      base_url_override: "nexcess2.demo"
     
   cron:
     - name: "test"
